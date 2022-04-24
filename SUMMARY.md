@@ -1,2 +1,2 @@
 # 목차 
-* [곱셈법칙](math-multi-rule.md)
+* [곱셈공식](math-multi-rule.md)
