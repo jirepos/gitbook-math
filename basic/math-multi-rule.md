@@ -7,7 +7,6 @@
 https://mathbang.net/219
 
 
-
 ![](.gitbook/assets/basic/math04.png)
 ![](.gitbook/assets/basic/math05.png)
 
