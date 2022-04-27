@@ -1,4 +1,4 @@
 # 다항식
 
 
-![](.gitbook/assets/basic/math06.png)
+![](../.gitbook/assets/basic/math06.png)
