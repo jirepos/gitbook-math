@@ -4,6 +4,7 @@
   * [다항식](basic/math-polynomial.md)
 * [회귀분석](regression/README.md)
   * [변수간의 관계](regression/regress-01-variable.md)
+  * [최소자승법을 이용한 선형회귀](regression/regress-20.md)
 
 
   
