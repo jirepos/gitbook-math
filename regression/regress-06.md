@@ -53,7 +53,7 @@ Y = -17.5791 + 3.9324 * X
   * 항상 -1과 1 사이의 값을 가지며( -1 ≤ r ≤ +1), 계수 값이 -1 또는 1일때 두 변수가 완전한 직선관계임을 뜻한다.
 
 * 결정계수(R-squared)
-  * R2(R제곱)으로 표시 
+  * R^2(R제곱)으로 표시 
   * 독립변수가 종속변수를 얼마나 잘 설명해주는지 보여주는 지표이다. 
   * 문제는 독립변수의 개수가 증가하면 함께 증가한다. 그러므로 결정계수에만 의존하여 회귀모델을 평가하는데에는 루미가 있다. 따라서 조정된 결정계수(Adjusted R-squared)가 제시되었다. 
   * 모형의 예측 정확도가 높아지면 결정계수가 1에 가까워진다
@@ -67,6 +67,32 @@ Y = -17.5791 + 3.9324 * X
 
 > 다중회귀의 경우  y = a + b1*x1 + b2*x2 에서 나오는 결정계수는 독립변수들(x1, x2)이 y를 얼마나 설명하냐를 나타낸다. 따라서 이 경우의 상관분석은 (y, x1)의 상관계수와 (y, x2)의 상관계수를 각각 구해야한다.
 
+
+
+## smummary 항목 설명
+
+* Dep. Variable: Dependent variable, 즉 종속변수를 의미한다.
+* Model: 모델링 방법을 뜻하고, OLS는  Ordinary Least Squares의 약자이다.
+* No. Observations: Number of observations, 관찰표본 수, 즉 총 표본 수를 뜻한다. 
+* Df Model: 독립변수의 개수이다.
+* R squared: R의 제곱이라는 뜻이고 결정계수를 의미한다. 전체 데이터 중 해당 회귀모델이 설명할 수 있는 데이터의 비율, 회귀식의 설명력을 나타낸다. SSTr/SST이나 상관계수 R을 제곱해서 구할 수 있다. 
+* F-statistics: F통계량을 뜻한다. F통계량은 MSR/MSE로 구할 수 있다. 
+* Prob: F통계량에 해당하는 P-value를 의미한다. P는 Probability의 첫글자이다.
+* Intercept coef: Intercept coefficient는 회귀식의 절편 값을 의미한다.
+* speed coef: 독립변수 coefficient는 독립변수 "speed"의 회귀계수를 의미하며, 회귀식에서 기울기를 의미한다. 
+
+* std err : 계수 추정치의 표준오차(standard error), 값이 작을 수록 좋음 
+* t : t-test 독립변수와 종속변수 사이의 상관관계. 값이 클 수록 상관도가 큼 
+* p-value(p > |t|) : 독립변수들의 유의확률, 0.05보다 작아야 유의미함. 
+* [0.025 0.975] : 회귀 계수의 신뢰구간 
+* coef(Coefficient) : 회귀 계수 
+* Omnibus : 디아고스티노 검정(D'Angostino's Test). 비대칭도와 첨도를 결합한 정규성 테스트이며 값이 클 수록 정규 분포를 따름 
+* Prob(Omnibus) : 디아고스티노 검정이 유의한지 판단(0.05이하일 경우 유의하다고 판단)
+
+
+
+
+https://lovelydiary.tistory.com/348
 
 
 ### 결정계수 
