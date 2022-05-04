@@ -5,6 +5,7 @@
   * [다항식](basic/math-polynomial.md)
   * [도수분포표](basic/math-frequency-table.md)
   * [지수](basic/math-exp.md)
+  * [거듭제곱근](basic/math-sqr.md)
 * [평균](avg/README.md) 
   * [분산,표준편차](avg/avg-variance.md)
   * [기하평균,조화평균](avg/avg-geo.md)
