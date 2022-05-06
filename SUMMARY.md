@@ -24,8 +24,8 @@
   * [회귀분석](regression/regress-03.md)
   * [회귀계수의 추정](regression/regress-04.md)
   * [다중 회귀분석](regression/regress-05.md)
-  * [최소자승법을 이용한 선형회귀](regression/regress-06.md)
   * [가설검정](regression/regress-07.md)
+  * [회귀분석 결과 해석](regression/regress-08.md)
 
 
   
