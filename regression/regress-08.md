@@ -137,7 +137,12 @@ https://zephyrus1111.tistory.com/52
 
 
 
+
 ## 해석
+
+
+
+
 
 
 https://velog.io/@pyose95/Data-Analysis-15.-%EB%8B%A8%EC%88%9C%EC%84%A0%ED%98%95-%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D-Simple-Linear-Regression-Analysis-2
