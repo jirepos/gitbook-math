@@ -17,7 +17,7 @@
   * [정규분포 기초 (4)](normal/normal-basic-04.md)   
 * [표본평균](samplemean/README.md)     
   * [표본평균 구하기](samplemean/samplemean-01.md)     
-  * [통계적 추정(samplemean/samplemean-02.md)     
+  * [통계적 추정](samplemean/samplemean-02.md)     
 * [회귀분석](regression/README.md)
   * [변수간의 관계](regression/regress-01-variable.md)
   * [선형관계 정량화](regression/regress-02.md)
@@ -26,6 +26,8 @@
   * [다중 회귀분석](regression/regress-05.md)
   * [가설검정](regression/regress-07.md)
   * [회귀분석 결과 해석](regression/regress-08.md)
+* [T검정](ttest/README.md)
+
 
 
   
