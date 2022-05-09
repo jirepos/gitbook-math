@@ -450,8 +450,7 @@ plt.show()
 
 
 ## 참고 
-[Velog의 회귀분석 정리한 블로그]()
-https://velog.io/@pyose95/Data-Analysis-15.-%EB%8B%A8%EC%88%9C%EC%84%A0%ED%98%95-%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D-Simple-Linear-Regression-Analysis-2)     
+[Velog의 회귀분석 정리한 블로그](https://velog.io/@pyose95/Data-Analysis-15.-%EB%8B%A8%EC%88%9C%EC%84%A0%ED%98%95-%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D-Simple-Linear-Regression-Analysis-2)     
 [Python을 이용한 회귀분석](https://zephyrus1111.tistory.com/52)      
 [선형회귀분석 결과해석하기](https://lovelydiary.tistory.com/348)     
 [Python으로 회귀분석 해보기](https://hanawithdata.tistory.com/entry/%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D2-Python%EC%9C%BC%EB%A1%9C-%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D-%ED%95%B4%EB%B3%B4%EA%B8%B0)     
