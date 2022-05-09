@@ -26,8 +26,10 @@
   * [다중 회귀분석](regression/regress-05.md)
   * [가설검정](regression/regress-07.md)
   * [회귀분석 결과 해석](regression/regress-08.md)
+  * [파이썬을 사용한 다중회귀분석](regression/regress-09.md)
 * [T검정](ttest/README.md)
-
+* [Sklearn](sklearn/README.md)
+  * [학습과 테스트 셋트 분리](sklearn/sklearn-01-split.md)
 
 
   
