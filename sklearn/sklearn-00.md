@@ -167,3 +167,96 @@ iris.feature_names
 이것은 데이터셋이 꽃받침 길이, 꽃받침 너비, 꽃잎 길이, 꽃입 너비 등 4개의 컬럼으로 구성되어 있다는 것을 의미한다.
 
 
+
+## Pandas 사용
+
+```python
+import pandas as pd
+
+iris_df = pd.DataFrame(data=iris_data, columns=iris.feature_names) # 배열 만들기
+iris_df["label"] = iris.target # 라벨 붙이기
+iris_df 
+```
+```
+	sepal length (cm)	sepal width (cm)	petal length (cm)	petal width (cm)	label
+0	5.1	3.5	1.4	0.2	0
+1	4.9	3.0	1.4	0.2	0
+2	4.7	3.2	1.3	0.2	0
+3	4.6	3.1	1.5	0.2	0
+4	5.0	3.6	1.4	0.2	0
+...	...	...	...	...	...
+145	6.7	3.0	5.2	2.3	2
+146	6.3	2.5	5.0	1.9	2
+147	6.5	3.0	5.2	2.0	2
+148	6.2	3.4	5.4	2.3	2
+149	5.9	3.0	5.1	1.8	2
+150 rows × 5 columns
+```
+pandas의 DataFrame을 이용해 2차원 배열을 만들었다.
+row=iris_data, columns=iris.feature_names를 사용했다.
+가장 우측에 label을 통해 정답지도 같이 추가했다.
+
+
+## 데이터 분리하기
+현재 총 150개의 데이터셋을 갖고 있다.
+머신러닝 모델은 학습용 데이터와 테스트용 데이터는 겹치면 안되기 때문에 training dataset과 test dataset으로 나눠야 한다.
+
+
+
+```python
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(iris_data, 
+                                                    iris_label, 
+                                                    test_size=0.2, 
+                                                    random_state=7)
+
+print('X_train 개수: ', len(X_train),', X_test 개수: ', len(X_test))
+```
+
+```
+X_train 개수:  120 , X_test 개수:  30
+```
+train_test_split 기능으로 손 쉽게 나눌 수 있다.
+
+*_train은 트레이닝용으로 후에 모델을 만들 때 사용된다. x_train은 row값, y_train은 label값을 갖고 있다.
+
+test_size=0.2로 total 150EA의 20%인 30개의 데이터를 *_test으로 보냈다.
+
+
+> 여기서 random_state는 y_train이 갖고있는 해시값이라고 보면 편하다.
+랜덤으로 테스트용 데이터를 추출하지만 해시값을 같게 해서 재현할 수 있다.(해당 인자는 없어도 무관하다.)
+
+## 데이터셋 확인하기
+```python
+X_train.shape, y_train.shape
+```
+```
+((120, 4), (120,))
+```
+```python
+X_test.shape, y_test.shape
+```
+```
+((30, 4), (30,))
+```
+```python
+y_train, y_test
+```
+
+```
+(array([2, 1, 0, 2, 1, 0, 0, 0, 0, 2, 2, 1, 2, 2, 1, 0, 1, 1, 2, 0, 0, 0,
+        2, 0, 2, 1, 1, 1, 0, 0, 0, 1, 2, 1, 1, 0, 2, 0, 0, 2, 2, 0, 2, 0,
+        1, 2, 1, 0, 1, 0, 2, 2, 1, 0, 0, 1, 2, 0, 2, 2, 1, 0, 1, 0, 2, 2,
+        0, 0, 2, 1, 2, 2, 1, 0, 0, 2, 0, 0, 1, 2, 2, 1, 1, 0, 2, 0, 0, 1,
+        1, 2, 0, 1, 1, 2, 2, 1, 2, 0, 1, 1, 0, 0, 0, 1, 1, 0, 2, 2, 1, 2,
+        0, 2, 1, 1, 0, 2, 1, 2, 1, 0]),
+ array([2, 1, 0, 1, 2, 0, 1, 1, 0, 1, 1, 1, 0, 2, 0, 1, 2, 2, 0, 0, 1, 2,
+        1, 2, 2, 2, 1, 1, 2, 2]))
+```
+y_train과 y_test는 train_test_split 덕분에 label값이 무작위로 섞여있다. 
+
+
+## 참조 
+[붓꽃 품종 예측하기](https://chan123.tistory.com/106)     
+[Iris 품종 분류모델 만들기](https://velog.io/@wheres5/Iris-%ED%92%88%EC%A2%85-%EB%B6%84%EB%A5%98-%EB%AA%A8%EB%8D%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0)     
