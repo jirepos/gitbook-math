@@ -30,6 +30,5 @@
 * [T검정](ttest/README.md)
 * [Sklearn](sklearn/README.md)
   * [학습과 테스트 셋트 분리](sklearn/sklearn-01-split.md)
-
-
+* [Machine Learning](ml/README.md)
   

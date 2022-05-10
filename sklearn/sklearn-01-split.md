@@ -45,7 +45,20 @@
 
 추가로, 검증 방법은 K-Fold 교차 검증 방식이 많이 이용되고 있다. 
 
+**용어**     
+* **Train** :  모델을 학습시키기 위한 dataset 
+* **Test** : 학습과 검증이 완료된 모델의 성능을 평가하기 위한 dataset, 학습에 관여하지 않는다. 
+* **Validation** : 이미 학습된 모델을 검증하기 위한 dataset으로 Train의 일부다. 
 
+
+
+
+
+
+
+
+
+## 기본 사용 방법 
 #### train/test 분리
 
 x,y numpy 배열을 만든다. 
@@ -169,10 +182,15 @@ x_train, x_valid, y_train, y_valid = train_test_split(data, target, test_size=0.
 **return**     
 
 > stratify : 계층화 하다 
-
 * X_train, X_test, Y_train, Y_test : arrays에 데이터와 레이블을 둘 다 넣었을 경우의 반환이며, 데이터와 레이블의 순서쌍은 유지된다.
 
 * X_train, X_test : arrays에 레이블 없이 데이터만 넣었을 경우의 반환
+
+**용어**     
+* X_train : 학습용 피처 데이터 세트 
+* X_test : 테스트용 피처 데이터 세트
+* Y_train : 학습용 레이블 데이터 세트
+* Y_test : 테스트용 레이블 데이터 세트 
 
 
 
