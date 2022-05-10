@@ -176,8 +176,9 @@ sklearn.model_selection.train_test_split(
 
 
 ```
-x_train, x_valid, y_train, y_valid = train_test_split(data, target, test_size=0.2, shuffle=True, stratify=target, random_state=34)
+x_train, x_valid, y_train, y_valid = train_test_split(x_data, y_data, test_size=0.2, shuffle=True, stratify=target, random_state=34)
 ```
+
 
 **return**     
 
@@ -191,10 +192,6 @@ x_train, x_valid, y_train, y_valid = train_test_split(data, target, test_size=0.
 * X_test : 테스트용 피처 데이터 세트
 * Y_train : 학습용 레이블 데이터 세트
 * Y_test : 테스트용 레이블 데이터 세트 
-
-
-
-
 
 
 
