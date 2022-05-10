@@ -60,9 +60,8 @@
 
 
 ## 참고
-[데이터 사이언스 스쿨](https://datascienceschool.net/03%20machine%20learning/04.02%20%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D%EC%9D%98%20%EA%B8%B0%EC%B4%88.html)
-
-
+[데이터 사이언스 스쿨](https://datascienceschool.net/03%20machine%20learning/04.02%20%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D%EC%9D%98%20%EA%B8%B0%EC%B4%88.html)     
+[Statsmodel boston 예제](https://ysyblog.tistory.com/119)    
 
 
 
