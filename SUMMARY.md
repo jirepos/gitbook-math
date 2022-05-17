@@ -25,8 +25,10 @@
   * [회귀계수의 추정](regression/regress-04.md)
   * [다중 회귀분석](regression/regress-05.md)
   * [가설검정](regression/regress-07.md)
-  * [회귀분석 결과 해석](regression/regress-08.md)
-  * [파이썬을 사용한 다중회귀분석](regression/regress-09.md)
+  * [Python 회귀분석](regression/python/README.md)
+    * [statsmodel 단순회귀분석](regression/python/regress-08.md)
+    * [sklearn 단순회귀분석](regression/python/regress-09.md)
+    * [sklearn 다중회귀분석](regression//python/regress-10.md)
 * [T검정](ttest/README.md)
 * [Sklearn](sklearn/README.md)\
   * [사이킷런 데이터 셋](sklearn/sklearn-00.md)

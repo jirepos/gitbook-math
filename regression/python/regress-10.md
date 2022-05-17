@@ -1,9 +1,9 @@
-# 파이썬을 사용한 다중회귀분석(Multiple Linear Regression) 
+# sklearn 다중회귀분석(Multiple Linear Regression) 
 
 > 이 문서는 다중회귀분석을 학습하기 위해 작성한 문서로 참조에 있는 여러 사이트의 내용을 학습하면서 정리한 글입니다. 
 
 
-세상은 단순선형회귀로 설명할 수 있을만큼 다순하지 않다. 고려해야할 변수 X가 하나가 아니다. 예를들어 주택 임대료를 예측한다고 했을 때, 주택의 면적만 고려해서 예측한다면 단순회귀가 되겠지만, 지어진지 얼마나 오래되었는지, 지하철 역과의 거리가 얼마나 가까운지 등 다양한 요소의 영향을 받는다. 결국 주택 임대료 y를 예측하려면 여러개의 변수 X를 포함해야 한다. 이를 다중선형회귀(Multiple Linear Reression)라고 한다. 
+세상은 단순선형회귀로 설명할 수 있을만큼 단순하지 않다. 고려해야할 변수 X가 하나가 아니다. 예를들어 주택 임대료를 예측한다고 했을 때, 주택의 면적만 고려해서 예측한다면 단순회귀가 되겠지만, 지어진지 얼마나 오래되었는지, 지하철 역과의 거리가 얼마나 가까운지 등 다양한 요소의 영향을 받는다. 결국 주택 임대료 y를 예측하려면 여러개의 변수 X를 포함해야 한다. 이를 다중선형회귀(Multiple Linear Reression)라고 한다. 
 
 다중회귀분석에 대한 이해는  [다중 회귀분석](regress-05.md)을 참고한다. 
 
@@ -12,7 +12,7 @@
 [여기](https://github.com/Codecademy/datasets/blob/master/streeteasy/manhattan.csv)  
 
 
-![](../.gitbook/assets/regress/regress31.png)
+![](../../.gitbook/assets/regress/regress31.png)
 
 
 맨 왼쪽의 rent가 임대료이다. 
